@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".views.fragments.LearningLeadersFragment">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#C6C6C6">
+
+            <com.facebook.shimmer.ShimmerFrameLayout
+                android:id="@+id/shimmer_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <!-- Adding 15 rows of placeholders -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <include layout="@layout/item_shimmer_placeholder_layout" />
+
+                    <include layout="@layout/item_shimmer_placeholder_layout" />
+
+                    <include layout="@layout/item_shimmer_placeholder_layout" />
+
+                    <include layout="@layout/item_shimmer_placeholder_layout" />
+
+                    <include layout="@layout/item_shimmer_placeholder_layout" />
+
+                    <include layout="@layout/item_shimmer_placeholder_layout" />
+
+                    <include layout="@layout/item_shimmer_placeholder_layout" />
+
+                    <include layout="@layout/item_shimmer_placeholder_layout" />
+
+                    <include layout="@layout/item_shimmer_placeholder_layout" />
+
+                    <include layout="@layout/item_shimmer_placeholder_layout" />
+
+                    <include layout="@layout/item_shimmer_placeholder_layout" />
+
+                    <include layout="@layout/item_shimmer_placeholder_layout" />
+
+                    <include layout="@layout/item_shimmer_placeholder_layout" />
+
+                    <include layout="@layout/item_shimmer_placeholder_layout" />
+
+                    <include layout="@layout/item_shimmer_placeholder_layout" />
+
+                </LinearLayout>
+
+            </com.facebook.shimmer.ShimmerFrameLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rcv_learning_leaders"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </FrameLayout>
+</layout>
