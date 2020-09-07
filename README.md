@@ -8,7 +8,8 @@ This Android Mobile Application practise project has 2 functions:
 
 ###  Installation
 Clone the repository into Android Studio
-```git clone https://github.com/samoitadianah/LeaderBoard.git
+```
+git clone https://github.com/samoitadianah/LeaderBoard.git
 ```
 
 ### Maintainers
